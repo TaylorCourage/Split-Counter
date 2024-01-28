@@ -10,7 +10,7 @@
 			<p class="header">Taylor Courage's</p>
 			<h1>SPLIT COUNTER</h1>
 			<h3>Enter cast and finish size to get counter value</h3>
-			<div align="center" id="stuff">
+			<div align="center">
 				<label for="block">Block size:</label>
 				<select name="block" id="block">
 					<option value="26">26" (11, 14)</option>
@@ -20,8 +20,8 @@
 				</select>
 				<br />
 				<br />
-				<label for="fin">Finish size:</label>
-				<input autocomplete="off" id="fin" type="text" value="0.000" size="5">
+				<label for="finish">Finish size:</label>
+				<input autocomplete="off" id="finish" type="text" value="0.000" size="5">
 				<br />
 				<br />
 				<label for="rack">Rack size:</label>
@@ -29,7 +29,7 @@
 				<br />
 				<br />
 				
-				<input type="button" value="Do it." onclick="doSplit()" />
+				<input type="button" value="Calculate" onclick="doSplit()" />
 				<br />
 				<br />
 				<br />
@@ -47,7 +47,7 @@
 				</table>
 				<script>
 					function doSplit() {
-						var dia = document.getElementById("fin").value;
+						var dia = document.getElementById("finish").value;
 						var block = document.getElementById("block").value;
 						var rack = document.getElementById("rack").value;
 						
@@ -69,7 +69,7 @@
 		</div>
 		<div class="footer" align="center">
 			&nbsp;
-			<p>&copy; 2024 Taylor Courage</p>
+			<p>&copy; 2024 <a href="https://github.com/TaylorCourage/Split-Counter">Taylor Courage</a></p>
 			<p>Created for Sivaco</p>
 		</div>
 	</body>
